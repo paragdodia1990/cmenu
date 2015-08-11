@@ -1,2 +1,2 @@
 #CMENU
-Customize menu for responsive sites.
+Jquery Plugin for Customize menu for responsive sites.
