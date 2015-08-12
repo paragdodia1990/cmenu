@@ -43,8 +43,8 @@ body{
     list-style: none;
     width:100%;
     background-color:blueviolet;
-    padding:10px;
     text-align: center;
+    line-height: 50px;
 }
 
 #container ul li:hover{
@@ -60,10 +60,20 @@ body{
 
 /* Sub Menu */
 
-#container ul li a.submenu:after {
+/*#container ul li a.submenu:after {
     content: "\25BA";
-    float:right;
+}*/
+
+#container ul li.submenu ul{
+    top:0px;
+    left:0px;
+    width:100%;
 }
 
-#container ul li ul{
+#container ul li ul li{
+    background-color: blue;
+}
+
+#container ul li ul li:hover{
+    background-color: green;
 }
