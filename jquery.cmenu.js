@@ -23,8 +23,17 @@
  */
 
 $.fn.cmenu = function (options) {
-    var settings = $.extend({width: 200, BgColor: 'grey'}, options);
+    var settings = $.extend({width: 200, BgColor: 'grey',toggleEvent:null}, options);
     this.css({'width': settings.width, 'background-color': settings.containerBgColor});
-    this.find('.submenu ul').css({'display':'none'});
+    this.find('.submenu ul').hide();
+    var toggleBtn = this.find('#toggle-btn').next();
+    toggleBtn.hide();
+    if(settings.toggleEvent != null){
+        this.find('#toggle-btn').click(toggleEvent);
+    }else{
+        this.find('#toggle-btn').click(function(){
+            toggleBtn.toggle();
+        });
+    }
     return this;
 };
