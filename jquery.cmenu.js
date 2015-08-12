@@ -32,7 +32,7 @@ $.fn.cmenu = function (options) {
         this.find('#toggle-btn').click(toggleEvent);
     }else{
         this.find('#toggle-btn').click(function(){
-            toggleBtn.toggle();
+            toggleBtn.slideToggle();
         });
     }
     return this;
