@@ -22,5 +22,9 @@
  * THE SOFTWARE.
  */
 
-
-
+$.fn.cmenu = function (options) {
+    var settings = $.extend({width: 200, BgColor: 'grey'}, options);
+    this.css({'width': settings.width, 'background-color': settings.containerBgColor});
+    this.find('.submenu ul').css({'display':'none'});
+    return this;
+};
