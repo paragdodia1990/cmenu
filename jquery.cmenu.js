@@ -24,7 +24,7 @@
 
 $.fn.cmenu = function (options) {
     /* Default Options for Custom Menu */
-    var settings = $.extend({width: 200, BgColor: 'grey', toggleEvent: null, togglePosition: 'left'}, options);
+    var settings = $.extend({width: '100%', BgColor: 'grey', toggleEvent: null, togglePosition: 'left'}, options);
     
     /* Style Container Element */
     this.css({'width': settings.width, 'background-color': settings.BgColor});
