@@ -29,6 +29,10 @@ body{
     margin: 0px;
 }
 
+#toggle-btn{
+    cursor: pointer;
+}
+
 #container{
     width:200px;
     background-color: appworkspace;
