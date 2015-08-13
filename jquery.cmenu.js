@@ -39,7 +39,7 @@ $.fn.cmenu = function (options) {
     
     this.find('#toggle-btn').find('.fa-bars').css({'float': settings.togglePosition});
     
-    if (settings.toggleEvent != null) {
+    if (settings.toggleEvent !== null) {
         this.find('#toggle-btn').click(settings.toggleEvent);
     } else {
         this.find('#toggle-btn').click(function () {
