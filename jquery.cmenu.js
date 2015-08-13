@@ -23,17 +23,17 @@
  */
 
 $.fn.cmenu = function (options) {
-    var settings = $.extend({width: 200, BgColor: 'grey',toggleEvent:null,togglePosition:'left'}, options);
+    var settings = $.extend({width: 200, BgColor: 'grey', toggleEvent: null, togglePosition: 'left'}, options);
     this.css({'width': settings.width, 'background-color': settings.BgColor});
     this.find('.submenu ul').hide();
-    var toggleBtn = this.find('#toggle-btn').next();
-    toggleBtn.find('.fa-bars').css({'float':settings.togglePosition});
-    toggleBtn.hide();
-    if(settings.toggleEvent != null){
+    var toggleContainer = this.find('#toggle-btn').next();
+    toggleContainer.hide();
+    this.find('#toggle-btn').find('.fa-bars').css({'float': settings.togglePosition});
+    if (settings.toggleEvent != null) {
         this.find('#toggle-btn').click(toggleEvent);
-    }else{
-        this.find('#toggle-btn').click(function(){
-            toggleBtn.slideToggle();
+    } else {
+        this.find('#toggle-btn').click(function () {
+            toggleContainer.slideToggle();
         });
     }
     return this;
