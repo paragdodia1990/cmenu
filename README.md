@@ -5,7 +5,7 @@
 Check out **Demo fiddle** Here: https://jsfiddle.net/biholaindrasinh/s0jyzrtw/5/embedded/result/
 
 ##DEPENDENCES
-This plugin tested on `jquery-1.11.3.js` and it requires `font-awesome.css` for submenu right arrow and toggle bars icons.
+This plugin tested on **jquery-1.11.3.js, style.css** and it requires **font-awesome.css** for submenu right arrow and toggle bars icons.
 
 ##DOWNLOAD
 To download this plugin click here: http://biholaindrasinh.github.io/cmenu/
