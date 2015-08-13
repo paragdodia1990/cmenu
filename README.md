@@ -4,7 +4,7 @@
 ##DEMO
 #####Check out **Demo fiddle** Here: https://jsfiddle.net/biholaindrasinh/s0jyzrtw/5/embedded/result/
 
-##DEPENDENCY
+##DEPENDENCES
 #####This plugin tested on `jquery-1.11.3.js` and it requires `font-awesome.css` for submenu right arrow and toggle bars icons.
 
 ##DOWNLOAD
