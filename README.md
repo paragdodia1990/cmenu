@@ -11,33 +11,33 @@
     });
 ```
 ###Cmenu Options
-####width
-#### Default:'100%'
+####**width**
+####Default:'100%'
 ####Width Example
 ```
     $('#container').cmenu({width:'200px'});
 ```
-####BgColor
-#### Default:'grey'
+####**BgColor**
+####Default:'grey'
 ####Container Background Color Example
 ```
     $('#container').cmenu({BgColor:'#00FF00'});
 ```
-####togglePosition
-#### Default:'left'
+####**togglePosition**
+####Default:'left'
 ####Toggle Button Position Example
 ```
     $('#container').cmenu({togglePosition:'right'});
 ```
-####toggleEvent
-#### Default:null
+####**toggleEvent**
+####Default:null
 ####Custom Event binding in place of jquery slide toggle.
 ```
     $('#container').cmenu({toggleEvent:function(){
         toggleContainer.fadeToggle();
     }});
 ```
-#### You can pass multiple options in cmenu plugin.
+####*You can pass multiple options in cmenu plugin.*
 ```
     $('#container').cmenu({width: '50%', BgColor: 'magenta', togglePosition: 'left'});
 ```
