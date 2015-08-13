@@ -1,12 +1,16 @@
 #CMENU
 ###Jquery Plugin for Customize menu for responsive sites.
 
+##DEMO
 #####Check out **Demo fiddle** Here: https://jsfiddle.net/biholaindrasinh/s0jyzrtw/5/embedded/result/
 
+##DEPENDENCY
 #####This plugin tested on `jquery-1.11.3.js` and it requires `font-awesome.css` for submenu right arrow and toggle bars icons.
 
+##DOWNLOAD
 #####To download this plugin click here: http://biholaindrasinh.github.io/cmenu/
 
+##INITIALIZATION
 #####Simply Initialize plugin like other jquery plugins
 
 ```javascript
@@ -14,7 +18,7 @@
         $('selector').cmenu();
     });
 ```
-###Cmenu Options
+##OPTIONS
 ####**width**
 #####Default:'100%'
 #####Width Example
