@@ -28,11 +28,11 @@ $.fn.cmenu = function (options) {
     
     /* Style Container Element */
     this.css({'width': settings.width, 'background-color': settings.BgColor});
-    
+    var submenuContainer = this.find('.submenu ul');
     this.find('.submenu').click(function(){
-        
+        submenuContainer.slideToggle();
     });
-    this.find('.submenu ul').hide();
+    submenuContainer.hide();
     
     var toggleContainer = this.find('#toggle-btn').next();
     toggleContainer.hide();
