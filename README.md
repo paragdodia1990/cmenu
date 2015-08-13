@@ -1,5 +1,5 @@
 #CMENU
-##Jquery Plugin for Customize menu for responsive sites.
+###Jquery Plugin for Customize menu for responsive sites.
 
 #####Check out **Demo fiddle** Here: https://jsfiddle.net/biholaindrasinh/s0jyzrtw/5/embedded/result/
 
