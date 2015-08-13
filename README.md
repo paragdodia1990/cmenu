@@ -19,33 +19,33 @@ Simply Initialize plugin like other jquery plugins
     });
 ```
 ##OPTIONS
-#####**width**
-#####Default:'100%'
-#####Width Example
+**width**
+Default:'100%'
+Width Example
 ```javascript
     $('selector').cmenu({width:'200px'});
 ```
-#####**BgColor**
-#####Default:'grey'
-#####Container Background Color Example
+**BgColor**
+Default:'grey'
+Container Background Color Example
 ```javascript
     $('selector').cmenu({BgColor:'#00FF00'});
 ```
-#####**togglePosition**
-#####Default:'left'
-#####Toggle Button Position Example
+**togglePosition**
+Default:'left'
+Toggle Button Position Example
 ```javascript
     $('selector').cmenu({togglePosition:'right'});
 ```
-#####**toggleEvent**
-#####Default:null
-#####Custom Event binding in place of jquery slide toggle.
+**toggleEvent**
+Default:null
+Custom Event binding in place of jquery slide toggle.
 ```javascript
     $('selector').cmenu({toggleEvent:function(){
         toggleContainer.fadeToggle();
     }});
 ```
-#####*You can pass multiple options in cmenu plugin.*
+*You can pass multiple options in cmenu plugin.*
 ```javascript
     $('selector').cmenu({width: '50%', BgColor: 'magenta', togglePosition: 'left'});
 ```
