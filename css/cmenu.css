@@ -29,7 +29,7 @@ body{
     margin: 0px;
 }
 
-#toggle-btn{
+#toggle-btn .fa-bars{
     cursor: pointer;
 }
 
