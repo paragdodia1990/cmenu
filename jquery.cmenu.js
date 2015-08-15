@@ -24,29 +24,35 @@
 (function ($) {
 
     $.fn.cmenu = function (options) {
+        "use strict";
+        
         /* Default Options for Custom Menu */
-        var settings = $.extend({width: '100%', BgColor: 'grey', toggleEvent: null, togglePosition: 'left'}, options);
+        var settings = $.extend({width: '100%', BgColor: 'grey', toggleBtn: null, togglePosition: 'left'}, options);
 
-        /* Style Container Element */
+        /* Customize Container Element */
         this.css({'width': settings.width, 'background-color': settings.BgColor});
+        
+        /* Customize Toggle Button */
+        if(settings.toggleBtn === null){
+            settings.toggleBtn = "#toggle-btn";
+        }
+        var toggle = this.find(settings.toggleBtn);
+        var toggleContainer = this.find(settings.toggleBtn).next();
+        toggle.children().first().css({'float': settings.togglePosition});
+        toggle.children().first().click(function () {
+            toggleContainer.slideToggle();
+        });
+        
+        /* Customize Sub Menu */
         var submenuContainer = this.find('.submenu ul');
         this.find('.submenu').click(function () {
             submenuContainer.slideToggle();
         });
         submenuContainer.hide();
-
+        
+        
         var toggleContainer = this.find('#toggle-btn').next();
         toggleContainer.hide();
-
-        this.find('#toggle-btn').find('.fa-bars').css({'float': settings.togglePosition});
-
-        if (settings.toggleEvent !== null) {
-            this.find('#toggle-btn').click(settings.toggleEvent);
-        } else {
-            this.find('#toggle-btn').click(function () {
-                toggleContainer.slideToggle();
-            });
-        }
 
         return this;
     };
