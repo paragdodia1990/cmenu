@@ -38,6 +38,7 @@
         }
         var toggle = this.find(settings.toggleBtn);
         var toggleContainer = this.find(settings.toggleBtn).next();
+        toggleContainer.hide();
         toggle.children().first().css({'float': settings.togglePosition});
         toggle.children().first().click(function () {
             toggleContainer.slideToggle();
@@ -49,10 +50,6 @@
             submenuContainer.slideToggle();
         });
         submenuContainer.hide();
-        
-        
-        var toggleContainer = this.find('#toggle-btn').next();
-        toggleContainer.hide();
 
         return this;
     };
