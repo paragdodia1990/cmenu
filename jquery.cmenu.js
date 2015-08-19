@@ -25,31 +25,46 @@
 
     $.fn.cmenu = function (options) {
         "use strict";
-        
+
         /* Default Options for Custom Menu */
         var settings = $.extend({width: '100%', BgColor: 'grey', toggleBtn: null, togglePosition: 'left'}, options);
 
         /* Customize Container Element */
         this.css({'width': settings.width, 'background-color': settings.BgColor});
-        
+
         /* Customize Toggle Button */
-        if(settings.toggleBtn === null){
+        if (settings.toggleBtn === null) {
             settings.toggleBtn = "#toggle-btn";
         }
         var toggle = this.find(settings.toggleBtn);
-        var toggleContainer = this.find(settings.toggleBtn).next();
-        toggleContainer.hide();
+
+        /* Customize Toggle Container */
+        var toggleContainer = toggle.next();
+        var submenuContainer = this.find('.submenu1').next();
+        var innersubMenuContainer = this.find('.submenu2').next();
+        
+        toggleContainer.css({left: "-320px"});
         toggle.children().first().css({'float': settings.togglePosition});
         toggle.children().first().click(function () {
-            toggleContainer.slideToggle();
+            if (toggleContainer.css('left') === '0px') {
+                submenuContainer.hide();
+                innersubMenuContainer.hide();
+                toggleContainer.animate({left: "-320px"});
+            } else {
+                toggleContainer.animate({left: "0"});
+            }
         });
-        
+
         /* Customize Sub Menu */
-        var submenuContainer = this.find('.submenu ul');
-        this.find('.submenu').click(function () {
-            submenuContainer.slideToggle();
+        this.find('.submenu1').click(function () {
+            $(this).next().slideToggle();
         });
         submenuContainer.hide();
+
+        this.find('.submenu2').click(function () {
+            $(this).next().slideToggle();
+        });
+        innersubMenuContainer.hide();
 
         return this;
     };
