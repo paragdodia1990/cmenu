@@ -46,17 +46,6 @@ Toggle Button Position Example
 ```javascript
     $('selector').cmenu({togglePosition:'right'});
 ```
-**toggleEvent**
-
-Default:null
-
-Custom Event binding in place of jquery slide toggle.
-
-```javascript
-    $('selector').cmenu({toggleEvent:function(){
-        toggleContainer.fadeToggle();
-    }});
-```
 *You can pass multiple options in cmenu plugin.*
 
 ```javascript
