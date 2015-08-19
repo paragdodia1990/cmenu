@@ -33,17 +33,17 @@ body{
     cursor: pointer;
 }
 
-#container{
+#cmenu{
     width:200px;
     background-color: appworkspace;
 }
 
-#container ul{
+#cmenu ul{
     padding:0px;
     margin:0px;
 }
 
-#container ul li{
+#cmenu ul li{
     list-style: none;
     width:100%;
     background-color:blueviolet;
@@ -51,11 +51,11 @@ body{
     line-height: 50px;
 }
 
-#container ul li:hover{
+#cmenu ul li:hover{
     background-color:brown;
 }
 
-#container ul li a{
+#cmenu ul li a{
     text-decoration: none;
     color:white;
     width:100%;
@@ -64,20 +64,19 @@ body{
 
 /* Sub Menu */
 
-/*#container ul li a.submenu:after {
-    content: "\25BA";
-}*/
-
-#container ul li.submenu ul{
-    top:0px;
-    left:0px;
+#cmenu ul li.submenu1 ul{
     width:100%;
 }
 
-#container ul li ul li{
+#cmenu ul li ul li{
     background-color: blue;
 }
 
-#container ul li ul li:hover{
+#cmenu ul li ul li:hover{
     background-color: green;
+}
+
+.closedContainer{
+    position:absolute;
+    width:320px;
 }
