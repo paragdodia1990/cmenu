@@ -42,12 +42,12 @@
 
         this.find('.submenu1').each(function () {
             var link = $(this);
-            link.parent().prepend('<i class="fa fa-plus"></i>');
+            link.parent().append('<i class="fa fa-plus"></i>');
         });
 
         this.find('.submenu2').each(function () {
             var link = $(this);
-            link.parent().prepend('<i class="fa fa-plus"></i>');
+            link.parent().append('<i class="fa fa-plus"></i>');
         });
 
 
