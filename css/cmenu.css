@@ -64,6 +64,16 @@ body{
     display: block;
 }
 
+#cmenu ul li ul li a{
+    background-color: blue;
+    color:white;
+}
+
+#cmenu ul li ul li ul li a{
+    background-color: black;
+    color:white;
+}
+
 /* Sub Menu */
 
 #cmenu ul li i {
