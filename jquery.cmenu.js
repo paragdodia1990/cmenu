@@ -27,7 +27,7 @@
         "use strict";
 
         /* Default Options for Custom Menu */
-        var settings = $.extend({width: '100%', BgColor: 'grey', toggleBtn: null, togglePosition: 'left'}, options);
+        var settings = $.extend({width: '100%', BgColor: '', toggleBtn: null, togglePosition: 'left'}, options);
 
         /* Customize Container Element */
         this.css({'width': settings.width, 'background-color': settings.BgColor});
@@ -38,11 +38,24 @@
         }
         var toggle = this.find(settings.toggleBtn);
 
+        /* Add Plus and Minus Sign on submenus */
+
+        this.find('.submenu1').each(function () {
+            var link = $(this);
+            link.parent().prepend('<i class="fa fa-plus"></i>');
+        });
+
+        this.find('.submenu2').each(function () {
+            var link = $(this);
+            link.parent().prepend('<i class="fa fa-plus"></i>');
+        });
+
+
         /* Customize Toggle Container */
         var toggleContainer = toggle.next();
         var submenuContainer = this.find('.submenu1').next();
         var innersubMenuContainer = this.find('.submenu2').next();
-        
+
         toggleContainer.css({left: "-320px"});
         toggle.children().first().css({'float': settings.togglePosition});
         toggle.children().first().click(function () {
@@ -56,13 +69,15 @@
         });
 
         /* Customize Sub Menu */
-        this.find('.submenu1').click(function () {
-            $(this).next().slideToggle();
+        this.find('.submenu1').siblings().filter('i').click(function () {
+            $(this).toggleClass('fa-minus');
+            $(this).parent().find('ul').first().slideToggle();
         });
         submenuContainer.hide();
 
-        this.find('.submenu2').click(function () {
-            $(this).next().slideToggle();
+        this.find('.submenu2').siblings().filter('i').click(function () {
+            $(this).toggleClass('fa-minus');
+            $(this).parent().find('ul').first().slideToggle();
         });
         innersubMenuContainer.hide();
 
