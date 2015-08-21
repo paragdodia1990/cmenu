@@ -1,0 +1,27 @@
+{
+  "name": "cmenu",
+  "title": "CMENU",
+  "description": "A customizalbe menu plugin for jquery.",
+  "keywords": [
+    "jquery-plugins",
+    "jquery-cmenu"
+  ],
+  "version": "v1.1-beta",
+  "author": {
+    "name": "Bihola Indrasinh",
+    "url": "https://github.com/biholaindrasinh"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/mit-license.php"
+    }
+  ],
+  "bugs": "https://github.com/biholaindrasinh/cmenu/issues",
+  "homepage": "http://biholaindrasinh.github.io/cmenu/",
+  "docs": "https://github.com/biholaindrasinh/cmenu/blob/master/README.md",
+  "download": "https://github.com/biholaindrasinh/cmenu/archive/v1.1-beta.zip",
+  "dependencies": {
+    "jquery": ">=1.11"
+  }
+}
