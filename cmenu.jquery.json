@@ -3,8 +3,9 @@
   "title": "CMENU",
   "description": "A customizalbe menu plugin for jquery.",
   "keywords": [
-    "jquery-plugins",
-    "jquery-cmenu"
+    "responsive",
+    "menu",
+    "navigation"
   ],
   "version": "1.1.0",
   "author": {
